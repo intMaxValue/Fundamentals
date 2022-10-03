@@ -3,23 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerOperations", "IntegerOperations\IntegerOperations.csproj", "{D43BED17-CFB8-4C6C-B0C6-3548F75B1E30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegerOperations", "IntegerOperations\IntegerOperations.csproj", "{D43BED17-CFB8-4C6C-B0C6-3548F75B1E30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumDigits", "SumDigits\SumDigits.csproj", "{97689761-BAF6-4A9D-8427-C94DE7C600A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumDigits", "SumDigits\SumDigits.csproj", "{97689761-BAF6-4A9D-8427-C94DE7C600A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevator", "Elevator\Elevator.csproj", "{5C28F55D-3BE0-44C6-826B-A1943D718E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elevator", "Elevator\Elevator.csproj", "{5C28F55D-3BE0-44C6-826B-A1943D718E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfChars", "SumOfChars\SumOfChars.csproj", "{43B83F61-F623-4FC0-93E7-A287D15B4F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfChars", "SumOfChars\SumOfChars.csproj", "{43B83F61-F623-4FC0-93E7-A287D15B4F69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintPartOfTheASCIITable", "PrintPartOfTheASCIITable\PrintPartOfTheASCIITable.csproj", "{DF31D23A-03A7-4B91-BA60-FFAADE2D74E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintPartOfTheASCIITable", "PrintPartOfTheASCIITable\PrintPartOfTheASCIITable.csproj", "{DF31D23A-03A7-4B91-BA60-FFAADE2D74E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriplesOfLatinLetters", "TriplesOfLatinLetters\TriplesOfLatinLetters.csproj", "{8DD4267C-3D55-4960-AEB0-7137E2C3956E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriplesOfLatinLetters", "TriplesOfLatinLetters\TriplesOfLatinLetters.csproj", "{8DD4267C-3D55-4960-AEB0-7137E2C3956E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterOverflow", "WaterOverflow\WaterOverflow.csproj", "{0B196609-8CC2-433C-85E7-FB52B068B19B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaterOverflow", "WaterOverflow\WaterOverflow.csproj", "{0B196609-8CC2-433C-85E7-FB52B068B19B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerKegs", "BeerKegs\BeerKegs.csproj", "{2EAC738B-5250-4E74-92AB-E071EAC28E4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerKegs", "BeerKegs\BeerKegs.csproj", "{2EAC738B-5250-4E74-92AB-E071EAC28E4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiceMustFlow", "SpiceMustFlow\SpiceMustFlow.csproj", "{D48A8436-B2A9-4612-899A-DC1F0507E98E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiceMustFlow", "SpiceMustFlow\SpiceMustFlow.csproj", "{D48A8436-B2A9-4612-899A-DC1F0507E98E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.csproj", "{9B8A0F49-F5B4-4065-9AC0-15ABFB7E6EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowballs", "Snowballs\Snowballs.csproj", "{C530D0BA-274B-4DC1-96BD-10651B37796C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{D48A8436-B2A9-4612-899A-DC1F0507E98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D48A8436-B2A9-4612-899A-DC1F0507E98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D48A8436-B2A9-4612-899A-DC1F0507E98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8A0F49-F5B4-4065-9AC0-15ABFB7E6EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8A0F49-F5B4-4065-9AC0-15ABFB7E6EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8A0F49-F5B4-4065-9AC0-15ABFB7E6EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8A0F49-F5B4-4065-9AC0-15ABFB7E6EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C530D0BA-274B-4DC1-96BD-10651B37796C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C530D0BA-274B-4DC1-96BD-10651B37796C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C530D0BA-274B-4DC1-96BD-10651B37796C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C530D0BA-274B-4DC1-96BD-10651B37796C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

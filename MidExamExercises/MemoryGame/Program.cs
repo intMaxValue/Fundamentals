@@ -10,16 +10,16 @@ namespace MemoryGame
     {
         static void Main(string[] args)
         {
-            List<string> Elements = Console.ReadLine().Split(" ").ToList();
+            List<string> Elements = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList();
             int moves = 0;
 
             string input;
             while ((input = Console.ReadLine()) != "end")
             {
-                int[] inputArr = input.Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
-                
+                int[] inputArr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
-                if (Elements.Count <= 1)
+
+                if (Elements.Count == 0)
                 {
                     Console.WriteLine($"You have won in {moves} turns!");
                     return;
@@ -27,7 +27,7 @@ namespace MemoryGame
 
                 moves++;
 
-                
+
 
                 if ((inputArr[0] < 0 || inputArr[1] < 0)
                     || (inputArr[0] > Elements.Count - 1) || (inputArr[1] > Elements.Count - 1)
