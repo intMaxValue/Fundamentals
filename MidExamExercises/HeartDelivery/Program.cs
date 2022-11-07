@@ -10,73 +10,75 @@ namespace HeartDelivery
         {
             int[] neighborhood = Console.ReadLine().Split("@").Select(int.Parse).ToArray();
             string input = "";
-            int currPositionIndex = 0;
-            int housesLeftUnloved = 0;
+            int currentPosition = 0;
 
             while ((input = Console.ReadLine()) != "Love!")
             {
-                string[] command = input.Split().ToArray();
+                string[] command = input.Split(" ");
+                
                 int jump = int.Parse(command[1]);
 
-                if (currPositionIndex + jump > neighborhood.Length - 1)
+                if (currentPosition + jump > neighborhood.Length - 1)
                 {
-                    currPositionIndex = 0;
-                    if (neighborhood[0] == 0)
-                    {
-                        Console.WriteLine($"Place {neighborhood[0]} already had Valentine's day.");
-                        continue;
-                    }
-                    else if (neighborhood[0] > 0)
-                    {
-                        neighborhood[0] -= 2;
-                        if (neighborhood[0] == 0)
-                        {
-                            Console.WriteLine($"Place {neighborhood[0]} has Valentine's day.");
+                    currentPosition = 0;
 
+                    if (neighborhood[currentPosition] == 0)
+                    {
+                        Console.WriteLine($"Place {currentPosition} already had Valentine's day.");
+                    }
+                    else
+                    {
+                        neighborhood[currentPosition] -= 2;
+
+                        if (neighborhood[currentPosition] == 0)
+                        {
+                            Console.WriteLine($"Place {currentPosition} has Valentine's day.");
                         }
                     }
                 }
 
-                else if (currPositionIndex + jump <= neighborhood.Length - 1)
+                else if (currentPosition + jump <= neighborhood.Length - 1)
                 {
-                    currPositionIndex += jump;
+                    currentPosition += jump;
 
-                    if (neighborhood[currPositionIndex] == 0)
+                    if (neighborhood[currentPosition] == 0)
                     {
-                        Console.WriteLine($"Place {neighborhood[currPositionIndex]} already had Valentine's day.");
-                        continue;
+                        Console.WriteLine($"Place {currentPosition} already had Valentine's day.");
                     }
-                    else if (neighborhood[0] > 0)
+                    else
                     {
-                        neighborhood[currPositionIndex] -= 2;
-                        if (neighborhood[currPositionIndex] == 0)
-                        {
-                            Console.WriteLine($"Place {currPositionIndex} has Valentine's day.");
+                        neighborhood[currentPosition] -= 2;
 
+                        if (neighborhood[currentPosition] == 0)
+                        {
+                            Console.WriteLine($"Place {currentPosition} has Valentine's day.");
                         }
                     }
                 }
 
-
             }
 
-            Console.WriteLine($"Cupid's last position was {currPositionIndex}.");
+            int failedPlaces = 0;
 
-            if (neighborhood.Sum() == 0)
-            {
-                Console.WriteLine("Mission was successful.");
-                return;
-            }
-            else
+            if (neighborhood.Sum() > 0)
             {
                 for (int i = 0; i < neighborhood.Length; i++)
                 {
                     if (neighborhood[i] > 0)
                     {
-                        housesLeftUnloved++;
+                        failedPlaces++;
                     }
                 }
-                Console.WriteLine($"Cupid has failed {housesLeftUnloved} places.");
+
+                Console.WriteLine($"Cupid's last position was {currentPosition}.");
+                Console.WriteLine($"Cupid has failed {failedPlaces} places.");
+                return;
+            }
+
+            else
+            {
+                Console.WriteLine($"Cupid's last position was {currentPosition}.");
+                Console.WriteLine("Mission was successful.");
             }
 
         }
